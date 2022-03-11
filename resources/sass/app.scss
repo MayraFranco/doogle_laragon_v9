@@ -1,0 +1,373 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+// Variables
+@import 'variables';
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+body {
+    background-color: white;
+    margin:0;
+    padding: 0;
+}
+//#region Registros
+#containerLogin {
+    padding: 0px;
+    margin: 0px !important;
+    width: 99%;
+    min-height: 900px;
+    .ImagenDer {
+        height: 100%;
+        width: 60%;
+        min-height: 1000px;
+        float: left;
+        position: absolute !important;
+        background: url('/img/loginimg1.png') no-repeat center;
+        background-size: cover;
+    }
+    .LoginIzq {
+        height: 100%;
+        width: 40%;
+        float: right;
+        position: static !important;
+        img {
+            height: 15%;
+            width: 20%;
+            margin: 10% 0% 15% 40%;
+        }
+        h3 {
+            text-align: center;
+            font-weight: bold;
+        }
+        .form-group>label {
+            top: 18px;
+            left: 6px;
+            position: relative;
+            background-color: white;
+            padding: 0px 5px 0px 5px;
+            font-size: 1.5em;
+            color: #bcbccb;
+        }
+        h5 {
+            font-size: 75%;
+            margin-left: 5%;
+            text-decoration: underline;
+            color: #bcbccb;
+        }
+        .BotonInicio {
+            button {
+                width: 100%;
+                height: 50px;
+                background-color: $primario;
+                color: white;
+                border-radius: 5px;
+                border: solid 1px;
+                font-size: 140%;
+            }
+        }
+        .BotonRegistro {
+            button {
+                width: 100%;
+                height: 50px;
+                background-color: white;
+                color: white;
+                border-radius: 5px;
+                border: solid 1px $primario;
+                font-size: 140%;
+            }
+            a {
+                color: $primario;
+            }
+        }
+    }
+}
+
+#dueño {
+    visibility: visible;
+    display: block;
+}
+
+#rescatista {
+    visibility: visible;
+    display: none;
+}
+
+#veterinaria {
+    visibility: visible;
+    display: none;
+}
+
+#Asociacion {
+    visibility: visible;
+    display: none;
+}
+
+.containerRegistro {
+    padding: 0px;
+    margin: 0px !important;
+    width: 99%;
+    min-height: 900px;
+    background-color: white;
+    .ImagenDueño {
+        height: 100%;
+        width: 60%;
+        min-height: 1000px;
+        float: left;
+        position: absolute !important;
+        background: url('/img/duenoimg.png') no-repeat center;
+        background-size: cover;
+    }
+    .RegistroDueño {
+        background-color: white;
+        height: 100%;
+        width: 40%;
+        float: right;
+        img {
+            height: 15%;
+            width: 20%;
+            margin: 5% 0% 5% 40% !important;
+        }
+        h3 {
+            text-align: center;
+            font-weight: bold;
+        }
+        .form-group {
+            margin: 0% 0% 0% 0%;
+            option {
+                color: #bcbccb
+            }
+            label {
+                top: 18px;
+                left: 6px;
+                position: relative;
+                background-color: white;
+                padding: 0px 5px 0px 5px;
+                font-size: 1.5em;
+                color: #bcbccb;
+            }
+        }
+        .form-check {
+            margin: 1% 0% 0% 3%;
+            color: #bcbccb;
+        }
+        .BotonRegistroUsuario {
+            button {
+                width: 100%;
+                height: 50px;
+                background-color: $primario;
+                color: white;
+                border-radius: 5px;
+                border: solid 1px;
+                font-size: 140%;
+                margin-top: 2%;
+            }
+        }
+        .BotonCancelarRegistro {
+            button {
+                width: 100%;
+                height: 50px;
+                background-color: white;
+                color: white;
+                border-radius: 5px;
+                border: solid 1px $primario;
+                font-size: 140%;
+                margin-top: 2%;
+            }
+            a {
+                color: $primario;
+                padding: 5% 33% 5% 30%;
+            }
+        }
+    }
+    .ImagenRescatista {
+        height: 100%;
+        width: 60%;
+        min-height: 1000px;
+        float: left;
+        position: absolute !important;
+        background: url('/img/voluntarioimg.png') no-repeat center;
+        background-size: cover;
+    }
+    .ImagenRescatista {
+        height: 100%;
+        width: 60%;
+        min-height: 1000px;
+        float: left;
+        position: absolute !important;
+        background: url('/img/voluntarioimg.png') no-repeat center;
+        background-size: cover;
+    }
+    .ImagenVeterinaria {
+        height: 100%;
+        width: 60%;
+        min-height: 1000px;
+        float: left;
+        position: absolute !important;
+        background: url('/img/vetimg.png') no-repeat center;
+        background-size: cover;
+    }
+    .ImagenAsociacion {
+        height: 100%;
+        width: 60%;
+        min-height: 1000px;
+        float: left;
+        position: absolute !important;
+        background: url('/img/asociacionimg.png') no-repeat center;
+        background-size: cover;
+    }
+}
+//#endregion
+
+.fondo1 {
+    width: 99%;
+    min-height: 900px;
+    background: url('/img/fondo1.png');
+    background-size: 100% 100%;
+    margin-top: -55px;
+    #labelp {
+        margin-top: 7%;
+        color: #203030;
+        font-size: 3.0em;
+        font-weight: bold;
+        text-align: center;
+    } 
+    #labeln {
+        margin-top: 42%;
+        color: #203030;
+        font-size: 3.0em; //16px = 1 em
+        font-weight: bold;
+        text-align: center;
+    }
+    .letras_Blancas{
+        color: #fff
+    }
+    .boton {
+        margin-top: 2%;
+        margin-left: 10%;
+        background-color: #FC561D;
+        border: none;
+        border-radius: 2px;
+        min-width: 315px;
+        min-height: 40px;
+        color: #FFFFFF;
+        font-size: 1.5em;
+        text-align: center;
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+.fondo2 {
+    width: 100%;
+    min-height: 900px;
+    background: url('/img/img4.jpg');
+    background-size: 100% 100%;
+    .container1 {
+        left: 50px;
+        top: 1000px;
+        margin: 0px !important;
+        max-width: 736px;
+        min-height: 179px;
+        #superior {
+            //margin-top: 20%;
+            .label1 {
+                color: #203030;
+                background-color: transparent;
+                font-size: 1.5em;
+            }
+        }
+        #medio {
+            //margin-top: 20%;
+            .label2 {
+                color: #203030;
+                background-color: transparent;
+                font-size: 1.5em;
+            }
+        }
+        #inferior {
+            margin-top: 15%;
+            .label3 {
+                color: #203030;
+                background-color: transparent;
+                font-size: 1.5em;
+            }
+        }
+    }
+}
+
+#containerfon3 {
+    padding: 0px;
+    margin: 0px !important;
+    width: 100%;
+    height: 100%;
+    min-height: 900px;
+    background: #F1F1F1;
+    .fondo3izq {
+        width: 50%;
+        height: 100%;
+        min-height: 900px;
+        background: url('/img/img3.jpg');
+        background-size: cover;
+        float: left;
+    }
+    .fondo3der {
+        width: 50%;
+        height: 100%;
+        min-height: 900px;
+        background: #F1F1F1;
+        float: right;
+        .labelt>label {
+            left: 5px;
+            top: 85px;
+            position: relative;
+            padding: 20px 20px 20px 20px;
+            margin: 20px 20px 20px 20px;
+            color: #203030;
+            background-color: #F1F1F1;
+            font-size: 2.2em;
+            font-weight: bold;
+            text-align: center;
+        }
+        .labelr>label {
+            left: 30px;
+            top: 120px;
+            position: relative;
+            padding: 0px 20px 0px 20px;
+            color: #FC561D;
+            background-color: #F1F1F1;
+            font-size: 1.6em;
+            text-align: center;
+        }
+        .labele>label {
+            left: 30px;
+            top: 145px;
+            position: relative;
+            padding: 0px 10px 0px 20px;
+            color: #FC561D;
+            background-color: #F1F1F1;
+            font-size: 1.6em;
+            text-align: center;
+        }
+        .labela>label {
+            left: 30px;
+            top: 170px;
+            position: relative;
+            padding: 0px 20px 0px 20px;
+            color: #FC561D;
+            background-color: #F1F1F1;
+            font-size: 1.6em;
+            text-align: center;
+        }
+        .labely>label {
+            left: 30px;
+            top: 155px;
+            position: relative;
+            padding: 0px 20px 0px 20px;
+            color: #FC561D;
+            background-color: #F1F1F1;
+            font-size: 1.6em;
+            text-align: center;
+        }
+    }
+}
